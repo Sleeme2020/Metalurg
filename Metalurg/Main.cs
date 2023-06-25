@@ -27,5 +27,17 @@ namespace Metalurg
         {
             Application.Exit();
         }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            TypePriceForm typePriceForm = new TypePriceForm();
+            typePriceForm.ShowDialog();
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ProductsForm productsForm = new ProductsForm();
+            productsForm.ShowDialog();
+        }
     }
 }

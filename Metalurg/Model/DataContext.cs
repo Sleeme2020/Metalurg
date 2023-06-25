@@ -7,8 +7,15 @@ using System.Threading.Tasks;
 
 namespace Metalurg.Model
 {
+    public delegate void DelegateEvent();
+
     internal static class ContextData
     {
+        public static event DelegateEvent DelegateEventProduct;
+        public static void GetProduct()
+        {
+            DelegateEventProduct();
+        }
         public static ApplicationContext Context { get; }
 
        private static User _user;
