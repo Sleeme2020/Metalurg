@@ -8,7 +8,9 @@ namespace Metalurg
         public DbSet<User> Users => Set<User>();
         public DbSet<Price> Prices => Set<Price>();
         public DbSet<TypePrice> TypePrices => Set<TypePrice>();
-        public DbSet<Product> Products => Set<Product>();   
+        public DbSet<Product> Products => Set<Product>(); 
+        public DbSet<Production> Productions => Set<Production>();
+        public DbSet<Product_Production> Product_Productions => Set<Product_Production>();
         public ApplicationContext() => Database.EnsureCreated();
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

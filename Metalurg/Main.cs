@@ -1,4 +1,5 @@
 ﻿using Metalurg.Model;
+using Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -38,6 +39,18 @@ namespace Metalurg
         {
             ProductsForm productsForm = new ProductsForm();
             productsForm.ShowDialog();
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ListObject listObject = new ListObject(typeof(Product));
+            listObject.ShowDialog();
+        }
+
+        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ListObject listObject = new ListObject();
+            listObject.ShowDialog();
         }
     }
 }

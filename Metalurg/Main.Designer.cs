@@ -32,6 +32,8 @@
             linkLabel1 = new LinkLabel();
             linkLabel2 = new LinkLabel();
             linkLabel3 = new LinkLabel();
+            linkLabel4 = new LinkLabel();
+            linkLabel5 = new LinkLabel();
             SuspendLayout();
             // 
             // label1
@@ -77,11 +79,35 @@
             linkLabel3.Text = "Виды Цен";
             linkLabel3.LinkClicked += linkLabel3_LinkClicked;
             // 
+            // linkLabel4
+            // 
+            linkLabel4.AutoSize = true;
+            linkLabel4.Location = new Point(12, 139);
+            linkLabel4.Name = "linkLabel4";
+            linkLabel4.Size = new Size(85, 15);
+            linkLabel4.TabIndex = 4;
+            linkLabel4.TabStop = true;
+            linkLabel4.Text = "Производство";
+            linkLabel4.LinkClicked += linkLabel4_LinkClicked;
+            // 
+            // linkLabel5
+            // 
+            linkLabel5.AutoSize = true;
+            linkLabel5.Location = new Point(12, 177);
+            linkLabel5.Name = "linkLabel5";
+            linkLabel5.Size = new Size(91, 15);
+            linkLabel5.TabIndex = 5;
+            linkLabel5.TabStop = true;
+            linkLabel5.Text = "Спецификации";
+            linkLabel5.LinkClicked += linkLabel5_LinkClicked;
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(384, 479);
+            Controls.Add(linkLabel5);
+            Controls.Add(linkLabel4);
             Controls.Add(linkLabel3);
             Controls.Add(linkLabel2);
             Controls.Add(linkLabel1);
@@ -100,5 +126,7 @@
         private LinkLabel linkLabel1;
         private LinkLabel linkLabel2;
         private LinkLabel linkLabel3;
+        private LinkLabel linkLabel4;
+        private LinkLabel linkLabel5;
     }
 }

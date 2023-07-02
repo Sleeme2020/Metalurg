@@ -12,6 +12,7 @@ namespace Model
         public string Name { get; set; }
         public string Description { get; set; }
         public List<Price>  Prices { get; set;}
+        public TypeProduct TypeProduct { get; set; }
 
         public Product Update(Product entity)
         {
