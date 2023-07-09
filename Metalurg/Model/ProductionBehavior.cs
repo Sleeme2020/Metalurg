@@ -11,6 +11,12 @@ namespace Metalurg.Model
 {
     public static class ProductionBehavior
     {
+
+        public static void OpenForm(Production production) 
+        { 
+        
+        }
+
         public static void Add(Production production , List<Product_Production> product_Production)
         {
             if (product_Production is null || product_Production.Count == 0) throw new Exception();

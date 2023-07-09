@@ -12,13 +12,16 @@ namespace Model
         public string Name { get; set; }
         public string Description { get; set; }
         public Product Product { get; set; }
+        public List<Recept_Product> Products { get; set; }
         public int Value { get; set; }
     }
 
     public class Recept_Product
     {
         public Recept Recept { get; set; }
+        public int ReceptId { get; set; }
         public Product Product { get; set; }
+        public int ProductId { get; set; }
         public int Value { get; set; } 
     }
     

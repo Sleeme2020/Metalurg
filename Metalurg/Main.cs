@@ -43,13 +43,16 @@ namespace Metalurg
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            ListObject listObject = new ListObject(typeof(Product));
+            //ListObject<Production> listObject = 
+            //    new ListObject<Production>(ProductionBehavior.GetProduction().ToList(), ProductionBehavior.OpenForm);
+            ListObject<User> listObject =
+                new ListObject<User>(UserBehavior.GetUsers().ToList(), UserBehavior.OpenForm);
             listObject.ShowDialog();
         }
 
         private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            ListObject listObject = new ListObject();
+            ListObject<Recept> listObject = new ListObject<Recept>();
             listObject.ShowDialog();
         }
     }

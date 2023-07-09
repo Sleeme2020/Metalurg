@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace Metalurg.Model
 {
     public delegate void DelegateEvent();
+    public delegate void OpenForm<T>(T? obj);
 
     internal static class ContextData
     {

@@ -12,7 +12,7 @@ namespace Model
         public int Id { get; set; }
         public DateTime DateTime { get; set; }
         public User User { get; set; }
-        public Product Product { get; set; }
+        public List<Product_Production> Product { get; set; }
         public Recept Recept { get; set; }
         public int value { get; set; }
 
@@ -30,7 +30,9 @@ namespace Model
     public class Product_Production
     {
         public Production Production { get; set; }
+        public int ProductionId { get; set; }
         public Product Product { get; set; }
+        public int ProductId { get; set; }
         public int Value { get; set; }
     }
 }
